@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>My very own website</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url("https://airwallpaper.com/wp-content/uploads/wall003/Abstract-Website-Backgrounds.jpg");
+        }
+
+        /* Dropdown area (note the loop script is in JS section) */
+        ul,
+        #myUL {
+            font-size: 50px;
+            list-style-type: none;
+            color: aqua;
+        }
+
+        .caret {
+            cursor: pointer;
+            user-select: none;
+
+        }
+        .caret:hover {
+            color: rgb(4, 44, 224);
+        }
+
+        .caret::before {
+            content: "\25B6";
+            color: aqua;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .caret-down::before {
+
+            -ms-transform: rotate(90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(90deg);
+            /* Safari */
+
+            transform: rotate(90deg);
+        }
+
+        .nested {
+            display: none;
+            
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* The grid order */
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .grid-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+
+        .item1 {
+            grid-column: 1 / span 1;
+            grid-row: 1;
+        }
+
+       
+        .item2 {
+            grid-column: 1 / span 3;
+            grid-row: 2;
+        }
+        
+
+        .item3 {
+            grid-column: 1 / span 3;
+            grid-row: 3;
+        }
+        
+        
+        .item4 {
+            grid-column: 1 / span 3;
+            grid-row: 3;
+        }
+        
+        .item5 {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+        }
+        .item6 {
+            font-family: "Bebas Neue", Helvetica, sans-serif;
+            
+        }
+
+        /* sections etc*/
+
+
+        /* ap pot calculation area is button*/
+        #button {
+            font-size: 50px;
+            background-color: #811cd4;
+            font-family: "Bebas Neue", Helvetica, sans-serif;
+
+        }
+        #button:hover {
+            color: rgb(4, 44, 224);
+        }
+        /* section1  which is the dropdown area(note the dropdown loop script is in JS area)*/
+        #section1 {
+            font-family: "Bebas Neue", Helvetica, sans-serif;
+
+        }
+
+        /* section2  which is calculate pots, esosearch, TTC search and advanced search area */
+
+        #section2 {
+            font-family: "Bebas Neue", Helvetica, sans-serif;
+
+        }
+        #section2:hover {
+            color:rgb(4, 44, 224)
+        }
+
+        /* ESOSEARCH */
+
+        #esosearch {
+            background-color: #811cd4;
+            font-size: 50px;
+            font-family: "Bebas Neue", Helvetica, sans-serif;
+        }
+        #esosearch:hover {
+            color: rgb(4, 44, 224);
+        }
+
+        ::placeholder {
+            color: aqua;
+        }
+        
+        
+        
+        
+        /*TTC Search*/
+        #ttcsearch {
+            background-color: #811cd4;
+            font-size: 50px;
+            font-family: "Bebas Neue", Helvetica, sans-serif;
+
+        }
+        #ttcsearch:hover {
+            color: rgb(4, 44, 224);
+        }
+       
+        #ttcadvsearch {
+            font-size: 40px;
+            font-family: "Bebas Neue", Helvetica, sans-serif;
+            color: aqua;
+
+        }
+        #ttcadvsearch:hover {
+            color: rgb(4, 44, 224);
+        }
+
+        /* JAVASCRIPT area */
+
+        #JS {
+            color: #811cd4;
+            font-size: 50px;
+        }
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <section id="section1">
+            <div class="grid-item item1">
+                <ul id="myUL">
+
+                    <!--ESO-->
+                    <li><span class="caret">Eso</span>
+                        <ul class="nested">
+                            <li><a href="https://us.tamrieltradecentre.com/pc/Trade/SearchResult?ItemNamePattern=tempered+brass&AmountMin=20&AmountMax=400&PriceMin=1000&PriceMax=1400"
+                                    target="_blank">Tempered
+                                    brass<br></a></li>
+
+                        </ul>
+                    </li>
+                    <!-- Opiskelu-->
+                    <li><span class="caret">Studying</span>
+                        <ul class="nested">
+                            <li><a href=" https://github.com" target="_blank">Github<br></a></li>
+                            
+                            <li><a href="https://validator.w3.org/#validate_by_upload" target="_blank">HTML
+                                    Validator<br></a>
+                            </li>
+                            <li><a href="https://jigsaw.w3.org/css-validator/#validate_by_upload" target="_blank">CSS
+                                    Validator<br></a></li>
+                            <li><a href="https://www.w3schools.com/" target="_blank">w3<br></a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><span class="caret">Errant Mind Band</span>
+                        <ul class="nested">
+                            <li><a href="https://soundcloud.com/errantmindband" target="_blank">Soundcloud<br></a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                 </div>
+                </section>
+            <section id="section2">
+
+        <div class="grid-item item2" >
+
+            <button type="button" id="button" onclick="spellPotCalculator()">Calculate AP potions</button>
+            <br><br><br>
+        </div>
+        <div class="grid-item item3" >
+
+        <form method="get" action="https://eso-hub.com/en/search" target="_blank">
+            <input type="text" id="esosearch" placeholder="ESO Search" name="query" size="12" value="">
+        </form><br><br>
+        </div>
+        <div class="grid-item item4">
+
+        <form method="get" action="https://us.tamrieltradecentre.com/pc/Trade/SearchResult?" target="_blank">
+            <input type="text" id="ttcsearch" placeholder="TTC Search" name="ItemNamePattern" size="12" value="">
+        </form>
+        </div>
+        <div class="grid-item item5">
+
+        <a href="https://us.tamrieltradecentre.com/pc/Trade/Search" target="_blank" id="ttcadvsearch"><b>TTC Advanced
+            Search</b><br></a>
+        </div>
+    </div>
+</section>
+
+    <!--JAVASCRIPT-->
+    <div class="grid-item item6">
+        <p id="JS">
+            <script>
+
+                // This is the loop for section1 dropdown field
+                let toggler = document.getElementsByClassName("caret");
+                let i;
+    
+                for (i = 0; i < toggler.length; i++) {
+                    toggler[i].addEventListener("click", function () {
+                        this.parentElement.querySelector(".nested").classList.toggle("active");
+                        this.classList.toggle("caret-down");
+                    });
+                }
+
+                const potion = 720
+                function spellPotCalculator() {
+                    
+                    const question = prompt(
+                        "Which option you want,\n1 = Necessary AP for given amount of pots\n2 = How much potions you get with AP you input"
+                    );
+                    switch (question) {                        
+                        case'1':
+                        const necessaryPots = prompt("Please give the amount of potions needed:",200);
+                    result = necessaryPots * potion
+                    alert("For " + necessaryPots + " potions, you need " +
+                        result + " AP");
+                        break;
+                        case'2': 
+                        const apAmount = prompt("Please give the amount of AP",1000000);
+                    result2 = apAmount / potion
+                    alert("You can buy this much " + result2 + " potions.")                   
+                    break;
+                    default:
+                        alert("Please choose either option 1 or 2.");
+                    }
+                }              
+            </script>
+            </div>
+</body>
+</html>
